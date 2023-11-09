@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 70px 1fr 200px;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+header {
+    background-color: rgb(2, 2, 70);
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    z-index: 6;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh 100vh ;
+    grid-template-areas: 
+    "intro"
+    "about-me"
+    "projects"
+    "contact-me";
+}
+
+
+
+hr {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#home {
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro {
+    padding: 50px;
+}
+
+.intro > a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(2, 2, 70);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.self-image {
+    border-radius: 90%;
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+
+footer {
+    background-color: rgb(2, 2, 70);
+
+}

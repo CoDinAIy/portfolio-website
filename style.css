@@ -42,6 +42,55 @@ main {
 
 
 
+.about-me-container {
+    gap: 50px;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
+}
+
+.about-me-title {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 50px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.about-me-description {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 100px 0px 0px 200px;
+
+}
+
+
+
+.tools {
+    min-height: 100%;
+    padding: 100px 0px 0px 150px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-template-rows: repeat(3, minmax(100px, 200px));
+    grid-template-areas: 
+        "html css"
+        "js node"
+        "npm tailwind";
+    
+}
+
+.tools > img {
+    width: 100px; 
+    height: 100px;
+}
+
+
 hr {
     margin-top: 100px;
     margin-left: auto;

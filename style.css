@@ -32,12 +32,16 @@ nav > a {
 
 main {
     display: grid;
-    grid-template-rows: 100vh 100vh 100vh 100vh ;
+    grid-template-rows: 100vh 100vh 200vh 100vh;
     grid-template-areas: 
     "intro"
     "about-me"
     "projects"
     "contact-me";
+}
+
+#projects {
+    min-height:100%;
 }
 
 
@@ -60,6 +64,7 @@ main {
     align-items: start;
 
 }
+
 
 .about-me-description {
     font-size: 28px;
@@ -127,6 +132,52 @@ hr {
     
 }
 
+#projects {
+    min-height: 100%;
+}
+.projects-title {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 80vh 80vh ;
+    padding: 50px 200px 100px 200px;
+    gap: 50px;
+}
+
+.project-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.project-headings {
+    font-size: px;
+}
+
+.project-container > div > img {
+    width: 80%;
+    height: 400px;
+}
+
+.project-container > div > .project-headings {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+.project-container > div > .project-desc {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
 
 
 footer {

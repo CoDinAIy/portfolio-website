@@ -1,4 +1,14 @@
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(../portfolio-website/Sometype_Mono/SometypeMono-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
 body {
+    font-family: my-cool-font, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -216,4 +226,45 @@ button {
 footer {
     background-color: rgb(2, 2, 70);
 
+}
+
+nav > a {
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.25s;
+}
+
+nav > a:hover {
+    font-size: 34px;
+}
+
+
+
+.project-container > div > img {
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.project-container > div > img:hover {
+    opacity: 0.1;
+}
+
+
+
+.link {
+    position: absolute;
+    margin-top: 200px;
+
+}
+
+.link-button {
+    font-size: 18px;
+    padding: 10px 40px 10px 40px;
+    color: blue;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 10px;
 }

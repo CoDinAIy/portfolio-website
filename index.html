@@ -73,6 +73,25 @@
         </section>
         <section id="contact-me">
             <hr>
+            <div class="contact-me-title">Contact me</div>
+            <div class="contact-me-container">
+                <form action="example.com/path" method="post">
+                    <legend>If you have any queries drop your name and message in the form below</legend>
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="eg. John" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter a short description here"></textarea>
+                    </div>
+                    <button class="form-button" type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
         <footer id="footer"></footer>

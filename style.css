@@ -3,7 +3,7 @@ body {
     padding: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 70px 1fr 200px;
+    grid-template-rows: 70px 1fr 100px;
     grid-template-areas:
         "header"
         "main"
@@ -32,7 +32,7 @@ nav > a {
 
 main {
     display: grid;
-    grid-template-rows: 100vh 100vh 200vh 100vh;
+    grid-template-rows: 100vh 100vh 200vh 90vh;
     grid-template-areas: 
     "intro"
     "about-me"
@@ -135,7 +135,7 @@ hr {
 #projects {
     min-height: 100%;
 }
-.projects-title {
+.projects-title, .contact-me-title {
     text-align: center;
     font-size: 48px;
     padding-top: 50px;
@@ -157,9 +157,6 @@ hr {
     align-items: center; 
 }
 
-.project-headings {
-    font-size: px;
-}
 
 .project-container > div > img {
     width: 80%;
@@ -177,6 +174,42 @@ hr {
     font-size: 24px;
     text-align: center;
     margin-top: 50px;
+}
+
+.contact-me-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+form > div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+input {
+    height: 2rem;
+    border-radius: 10px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+button {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 10px;
+    align-self: center;
+    margin: 10px;
 }
 
 

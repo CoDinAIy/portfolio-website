@@ -224,9 +224,18 @@ button {
 
 
 footer {
-    background-color: rgb(2, 2, 70);
+    background-color: rgb(12, 163, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+footer > a {
+    padding: 0px 50px 0px 50px;
+}
+
+
 
 nav > a {
     transition-property: font-size;
@@ -248,8 +257,8 @@ nav > a:hover {
     transition-delay: 0.25s;
 }
 
-.project-container > div > img:hover {
-    opacity: 0.1;
+.project > img:hover {
+    opacity: 0.3;
 }
 
 
@@ -261,10 +270,16 @@ nav > a:hover {
 }
 
 .link-button {
+
+    opacity: 1;
     font-size: 18px;
+    font-weight: 900;
     padding: 10px 40px 10px 40px;
     color: blue;
     text-decoration: none;
     border: 1px solid;
     border-radius: 10px;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
 }
+

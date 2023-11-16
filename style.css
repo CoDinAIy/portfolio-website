@@ -8,6 +8,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
     font-family: my-cool-font, sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +24,7 @@ body {
 }
 
 header {
-    background-color: rgb(2, 2, 70);
+    background-color: rgb(0, 0, 0);
     position: sticky;
     display: flex;
     justify-content: end;
@@ -91,8 +94,9 @@ main {
     min-height: 100%;
     padding: 100px 0px 0px 150px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 200px));
-    grid-template-rows: repeat(3, minmax(100px, 200px));
+    grid-template-columns: repeat(2, 20%);
+    grid-template-rows: repeat(3, 20%);
+    gap: 20px;
     grid-template-areas: 
         "html css"
         "js node"
@@ -126,10 +130,10 @@ hr {
 }
 
 .intro > a {
+    color: black;
     text-decoration: none;
-    color: white;
     font-size: 24px;
-    background-color: rgb(2, 2, 70);
+    background-color: #66fcf1;
     border-radius: 20px;
     padding: 10px;
 }
@@ -149,14 +153,14 @@ hr {
     text-align: center;
     font-size: 48px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .project-container {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 80vh 80vh ;
+    grid-template-rows: 1fr 1fr ;
     padding: 50px 200px 100px 200px;
     gap: 50px;
 }
@@ -169,21 +173,34 @@ hr {
 
 
 .project-container > div > img {
-    width: 80%;
-    height: 400px;
+    width: 500px;
+    min-height: 400px;
+    border-radius: 20px;
 }
 
 .project-container > div > .project-headings {
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     font-weight: 800;
 }
 
+.project-links {
+    margin: 30px;
+}
+.project-links > a {
+    color: black;
+    background-color: #66fcf1;;
+    border: solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
 .project-container > div > .project-desc {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .contact-me-container {
@@ -195,7 +212,7 @@ hr {
 form > div{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
 }
 
 form {
@@ -224,7 +241,7 @@ button {
 
 
 footer {
-    background-color: rgb(12, 163, 4);
+    background-color: #66fcf1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,27 +258,12 @@ nav > a {
     transition-property: font-size;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0.25s;
+    transition-delay: 0.1s;
 }
 
 nav > a:hover {
     font-size: 34px;
 }
-
-
-
-.project-container > div > img {
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0.25s;
-}
-
-.project > img:hover {
-    opacity: 0.3;
-}
-
-
 
 .link {
     position: absolute;
@@ -269,17 +271,25 @@ nav > a:hover {
 
 }
 
-.link-button {
 
-    opacity: 1;
-    font-size: 18px;
-    font-weight: 900;
-    padding: 10px 40px 10px 40px;
-    color: blue;
-    text-decoration: none;
-    border: 1px solid;
-    border-radius: 10px;
-    transition: opacity 0.4s ease-in-out;
-    cursor: pointer;
+@media (max-width:1400px) {
+    .tools > img {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .project-container > div > img {
+        width: 300px;
+        min-height: 300px;
+    }
+
+    .about-me-description {
+        font-size: 24px;
+ 
+    }
+
+    .tools {
+        gap: 30px;
+    }
+    
 }
-

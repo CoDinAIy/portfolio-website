@@ -199,7 +199,7 @@ hr {
 }
 
 .project-container > div > .project-desc {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -271,8 +271,19 @@ nav > a:hover {
 
 }
 
+#message, #name, #email {
+    width: 800px;
+}
+
 
 @media (max-width:1400px) {
+
+    main {
+        grid-template-rows: 100vh 100vh 300vh 90vh;
+    }
+    .intro {
+        font-size: 32px;
+    }
     .tools > img {
         width: 100px; 
         height: 100px;
@@ -291,5 +302,23 @@ nav > a:hover {
     .tools {
         gap: 30px;
     }
-    
+
+    .project-container {
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6, 1fr) ;
+        gap: 50px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    #message, #name, #email {
+        width: 500px;
+    }
+
+    .contact-me-container {
+        justify-content: center;
+    }
 }

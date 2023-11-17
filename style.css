@@ -45,7 +45,7 @@ nav > a {
 
 main {
     display: grid;
-    grid-template-rows: 100vh 110vh 300vh 100vh;
+    grid-template-rows: 100vh 100vh 250vh 90vh;
     grid-template-areas: 
     "intro"
     "about-me"
@@ -287,7 +287,7 @@ nav > a:hover {
     }
 
     main {
-        grid-template-rows: 100vh 110vh 350vh 100vh;
+        grid-template-rows: 100vh 110vh 300vh 100vh;
     }
     .intro {
         font-size: 32px;

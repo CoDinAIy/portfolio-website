@@ -322,6 +322,15 @@ nav > a:hover {
 
 @media (max-width:1100px) {
 
+    .project-container > div > .project-desc {
+        font-size: 24px;
+    }
+
+    .project-container > div > img {
+        width: 300px;
+        min-height: 200px;
+    }
+
     #home {
         display: flex; 
         flex-direction: column;
@@ -371,6 +380,14 @@ nav > a:hover {
 
 @media (max-width:600px) {
 
+    #name, #email, #message {
+        width: 300px;
+    }
+
+    main {
+        grid-template-rows: 100vh 100vh 400vh 100vh;
+    }
+
     .self-image {
         margin: 30px;
     }
@@ -414,7 +431,8 @@ nav > a:hover {
     }
 
     .tools > img {
-        width: 50px;
+        width: 40px;
+        height: 40px;
     }
 
 
@@ -431,4 +449,95 @@ nav > a:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 1fr;
     }
+
+    #footer > a {
+        padding: 10px;
+    }
+}   
+
+ 
+
+@media (max-width:600px) {
+
+
+    .project-container > div > img {
+        width: 200px;
+        min-height: 100px;
+    }
+    #name, #email, #message {
+        width: 300px;
+    }
+
+    main {
+        grid-template-rows: 100vh 100vh 250vh 100vh;
+    }
+
+    .self-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+
+
+    .intro {
+        font-size: 16px;
+        padding: 50px;
+    }
+
+    .intro > div {
+        padding: 20px;
+    }
+
+    .intro > a {
+        font-size: 14px;
+        margin: 10px;
+        
+    }
+
+    .about-me-description {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .tools {
+        gap: 10px;
+        padding: 0px 40px 0px 40px ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "html css js"
+        "node npm tailwind";
+    }
+
+    .tools > img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .project-container {
+        padding: 10px;
+    }
+
+    nav > a:hover {
+        font-size: 16px;
+    }
+
+    .about-me-container {
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr;
+    }
+
+    .contact-me-title, .about-me-title, .projects-title {
+        font-size: 32px;
+    }
+
+
+
 }   

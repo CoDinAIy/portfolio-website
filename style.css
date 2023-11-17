@@ -322,7 +322,21 @@ nav > a:hover {
 
 @media (max-width:1100px) {
 
-    #message, #name, #email {
+    #home {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .tools > img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    #name, #email, #message {
         width: 500px;
     }
 
@@ -347,10 +361,74 @@ nav > a:hover {
     }
 
     main {
-        grid-template-rows: 100vh 100vh 300vh 80vh;
+        grid-template-rows: 100vh 100vh 350vh 80vh;
     }
 
     .project-container {
         height: 0px; ;
     }
 }
+
+@media (max-width:600px) {
+
+    .self-image {
+        margin: 30px;
+    }
+
+    .nav {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #home {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .intro {
+        font-size: 25px;
+        padding: 100px;
+    }
+
+    .intro > div {
+        padding: 5px;
+    }
+
+    .intro > a {
+        font-size: 18px;
+        margin: 10px;
+        
+    }
+
+    .about-me-description {
+        padding: 50px;
+    }
+
+    .tools {
+        padding: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "html css js"
+        "node npm tailwind";
+    }
+
+    .tools > img {
+        width: 50px;
+    }
+
+
+    .project-container {
+        padding: 10px;
+    }
+
+    nav > a:hover {
+        font-size: 25px;
+    }
+
+    .about-me-container {
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr;
+    }
+}  

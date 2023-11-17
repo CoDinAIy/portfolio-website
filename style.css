@@ -370,7 +370,7 @@ nav > a:hover {
     }
 
     main {
-        grid-template-rows: 100vh 100vh 350vh 80vh;
+        grid-template-rows: 100vh 100vh 300vh 80vh;
     }
 
     .project-container {
@@ -404,7 +404,7 @@ nav > a:hover {
 
     .intro {
         font-size: 25px;
-        padding: 100px;
+        padding: 30px;
     }
 
     .intro > div {
@@ -449,9 +449,14 @@ nav > a:hover {
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 1fr;
     }
-
+    
     #footer > a {
         padding: 10px;
+
+    }
+    .self-image {
+        width: 150px;
+        height: 150px;
     }
 }   
 
@@ -460,22 +465,13 @@ nav > a:hover {
 @media (max-width:600px) {
 
 
-    .project-container > div > img {
-        width: 200px;
-        min-height: 100px;
-    }
+
     #name, #email, #message {
         width: 300px;
     }
 
-    main {
-        grid-template-rows: 100vh 100vh 250vh 100vh;
-    }
 
-    .self-image {
-        width: 150px;
-        height: 150px;
-    }
+
 
     .nav {
         font-size: 14px;
@@ -483,11 +479,6 @@ nav > a:hover {
     }
 
 
-
-    .intro {
-        font-size: 16px;
-        padding: 50px;
-    }
 
     .intro > div {
         padding: 20px;

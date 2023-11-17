@@ -45,7 +45,7 @@ nav > a {
 
 main {
     display: grid;
-    grid-template-rows: 100vh 110vh 400vh 10vh;
+    grid-template-rows: 100vh 110vh 400vh 100vh;
     grid-template-areas: 
     "intro"
     "about-me"

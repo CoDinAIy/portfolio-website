@@ -45,7 +45,7 @@ nav > a {
 
 main {
     display: grid;
-    grid-template-rows: 100vh 110vh 400vh 100vh;
+    grid-template-rows: 100vh 110vh 300vh 100vh;
     grid-template-areas: 
     "intro"
     "about-me"
@@ -287,7 +287,7 @@ nav > a:hover {
     }
 
     main {
-        grid-template-rows: 100vh 100vh 300vh 90vh;
+        grid-template-rows: 100vh 110vh 350vh 100vh;
     }
     .intro {
         font-size: 32px;
@@ -370,7 +370,7 @@ nav > a:hover {
     }
 
     main {
-        grid-template-rows: 100vh 100vh 300vh 80vh;
+        grid-template-rows: 100vh 100vh 350vh 100vh;
     }
 
     .project-container {
@@ -380,12 +380,16 @@ nav > a:hover {
 
 @media (max-width:600px) {
 
+    .project-desc {
+        font-size: 14px;
+    }
+
     #name, #email, #message {
         width: 300px;
     }
 
     main {
-        grid-template-rows: 100vh 100vh 400vh 100vh;
+        grid-template-rows: 100vh 100vh 450vh 100vh;
     }
 
     .self-image {
@@ -393,8 +397,8 @@ nav > a:hover {
     }
 
     .nav {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 14px;
+        padding: 5px;
     }
 
     #home {
@@ -458,20 +462,6 @@ nav > a:hover {
         width: 150px;
         height: 150px;
     }
-}   
-
- 
-
-@media (max-width:600px) {
-
-
-
-    #name, #email, #message {
-        width: 300px;
-    }
-
-
-
 
     .nav {
         font-size: 14px;
@@ -528,7 +518,6 @@ nav > a:hover {
     .contact-me-title, .about-me-title, .projects-title {
         font-size: 32px;
     }
-
 
 
 }   

@@ -1,3 +1,3 @@
 # portfolio-website
 
-https://codinaiy.github.io/portfolio-website/
+https://dinays-portfolio.onrender.com
